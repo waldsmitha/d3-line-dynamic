@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Data</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stock Data</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body>
-  <select id="metric">
-    <option value="aapl" selected>AAPL</option>
-    <option value="acn">ACN</option>
-    <option value="ael">AEL</option>
-    <option value="afsi">AFSI</option>
-    <option value="gst">GST</option>
-  </select>
-  <div id="chart">
-    <div id="tooltip">
-      <div class="price"></div>
-      <div class="date"></div>
+  <body>
+    <div id="chart">
+      <div class="symbol-select">
+        <h1>Symbol:</h1>
+        <select id="metric">
+          <option value="aapl" selected>AAPL</option>
+          <option value="acn">ACN</option>
+          <option value="ael">AEL</option>
+          <option value="afsi">AFSI</option>
+          <option value="gst">GST</option>
+        </select>
+      </div>
+      <div id="tooltip">
+        <div class="date"></div>
+        <div class="price"></div>
+      </div>
     </div>
-  </div>
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="app.js"></script>
-</body>
-
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

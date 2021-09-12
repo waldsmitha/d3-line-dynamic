@@ -1,14 +1,37 @@
 #chart {
   max-width: 1000px;
   max-height: 1000px;
-  background-color: #f7f7f7;
+  background-color: rgb(255, 255, 255);
   margin: 25px auto;
   position: relative;
+  border: 2px solid black;
+}
+.symbol-select {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  background: rgb(112, 112, 214);
+  color: white;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.symbol-select h1 {
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+#metric {
+  border-radius: 0;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 1;
 }
 
 #tooltip {
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(0, 0, 0);
   position: absolute;
   padding: 10px;
   background-color: #fff;
